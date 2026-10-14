@@ -17,7 +17,7 @@ mesure.
 
 | | |
 |---|---|
-| ✅ Publié | les empreintes SHA-256, les dates, le nombre de critères de chaque prédiction scellée et combien ont été tenus |
+| ✅ Publié | les empreintes SHA-256, les dates, le nombre de critères de chaque prédiction scellée (annoncés et confrontés) et combien ont été tenus |
 | ⛔ **Non** publié | le **titre** et le **contenu** des prédictions, les données de patients, les cohortes, le registre, le code |
 
 Les titres sont volontairement absents. Un titre de pré-enregistrement décrit
@@ -28,11 +28,19 @@ que l'empreinte permet justement d'éviter.
 
 | | |
 |---|---|
-| Chaîne de hachage | **644 150** maillons |
-| Empreinte de tête | `70cd73a8cfcf12e4af2512065b68a84e04c4f2b7ab695c42c68a1684c2de8828` |
-| Prédictions scellées | **32**, toutes jugées (voir `scelles.tsv`) |
-| Critères confrontés | **132** posés · **85** tenus · **47** démentis |
-| Date de l'état | 2026-10-14T07:55:06Z |
+| Chaîne de hachage | **651 637** maillons |
+| Empreinte de tête | `eb4204c78ef07c21a4414a0246bec7c9b4f0e2b9600adec98578d750b82daefd` |
+| Prédictions scellées | **41**, dont **40 jugées** (voir `scelles.tsv`) |
+| Critères | **181** annoncés · **173** confrontés · **118** tenus · **55** démentis |
+| Date de l'état | 2026-10-14T16:55Z |
+
+⚠️ **Deux colonnes de critères, et c'est voulu.** `criteres_annonces` compte tous
+les critères scellés ; `criteres_confrontes` ne compte que ceux qui ont reçu un
+verdict. Les 8 de différence appartiennent à une prédiction posée dont le calcul
+tourne encore. Avec un seul nombre, l'addition ne tombait pas juste : 118 + 55
+font 173, pas 181.
+
+> 📏 *Un compteur qui ne dit pas ce qu'il compte flatte celui qui le publie.*
 
 Chaque maillon de la chaîne contient l'empreinte du précédent : modifier une
 seule mesure passée invaliderait tous les maillons suivants. La chaîne est
@@ -97,6 +105,19 @@ est désormais mûre** : ses quatre attestations ont été récoltées, blocs
 également (bloc 971 087). Celle de 07 h 55 ne l'est pas encore, et tant
 qu'elle ne l'est pas, elle est *soumise*, pas *prouvée* — c'est écrit ici
 plutôt que supposé.
+
+## Ce qui a changé depuis la première publication
+
+Ce dépôt a été publié le 14/10/2026 avec 32 prédictions. Il en porte **41**
+le même jour : neuf de plus en une journée, dont les premières mesures de ce
+laboratoire sur une **issue clinique** (réponse à un traitement, survie) et
+plusieurs **démentis** — dont un qui retire les trois quarts de la portée du
+résultat le plus cité, et un autre qui montre qu'une correction d'un biais
+réel **dégrade** le classement.
+
+Le détail de chaque prédiction, son titre et son verdict critère par critère
+sont sur <https://complexity-lab.org/anteriorite.html>. Ici ne figurent que
+les empreintes : elles prouvent les dates, pas les conclusions.
 
 ## Vérifier soi-même
 

@@ -28,17 +28,17 @@ que l'empreinte permet justement d'éviter.
 
 | | |
 |---|---|
-| Chaîne de hachage | **651 637** maillons |
-| Empreinte de tête | `eb4204c78ef07c21a4414a0246bec7c9b4f0e2b9600adec98578d750b82daefd` |
-| Prédictions scellées | **41**, dont **40 jugées** (voir `scelles.tsv`) |
-| Critères | **181** annoncés · **173** confrontés · **118** tenus · **55** démentis |
-| Date de l'état | 2026-10-14T16:55Z |
+| Chaîne de hachage | **651 639** maillons |
+| Empreinte de tête | `87ce55bf2e77318d89bd5bab4de48fcf8c9f5a2ad1266a7be073d22a036e308d` |
+| Prédictions scellées | **42**, dont **41 jugées** (voir `scelles.tsv`) |
+| Critères | **186** annoncés · **178** confrontés · **121** tenus · **57** démentis |
+| Date de l'état | 2026-10-14T18:35Z |
 
 ⚠️ **Deux colonnes de critères, et c'est voulu.** `criteres_annonces` compte tous
 les critères scellés ; `criteres_confrontes` ne compte que ceux qui ont reçu un
 verdict. Les 8 de différence appartiennent à une prédiction posée dont le calcul
-tourne encore. Avec un seul nombre, l'addition ne tombait pas juste : 118 + 55
-font 173, pas 181.
+tourne encore. Avec un seul nombre, l'addition ne tombait pas juste : 121 + 57
+font 178, pas 186.
 
 > 📏 *Un compteur qui ne dit pas ce qu'il compte flatte celui qui le publie.*
 
@@ -114,6 +114,14 @@ laboratoire sur une **issue clinique** (réponse à un traitement, survie) et
 plusieurs **démentis** — dont un qui retire les trois quarts de la portée du
 résultat le plus cité, et un autre qui montre qu'une correction d'un biais
 réel **dégrade** le classement.
+
+⭐ **Et la 42ᵉ est le démenti de la 37ᵉ.** La première mesure de ce
+laboratoire sur une issue clinique (AUC 0,728 sur 26 patients) a été refaite
+le même jour sur 65 patients : **0,541**, et 30 % des groupes de gènes tirés
+au hasard font aussi bien, contre 2,5 % sur la première cohorte. La
+prédiction scellée exigeait, avant la mesure, que ce démenti soit écrit
+« aussi fort que s'il tenait ». Il l'est, dans la carte du chiffre qu'il
+corrige.
 
 Le détail de chaque prédiction, son titre et son verdict critère par critère
 sont sur <https://complexity-lab.org/anteriorite.html>. Ici ne figurent que

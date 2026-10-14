@@ -28,17 +28,17 @@ que l'empreinte permet justement d'éviter.
 
 | | |
 |---|---|
-| Chaîne de hachage | **651 639** maillons |
-| Empreinte de tête | `87ce55bf2e77318d89bd5bab4de48fcf8c9f5a2ad1266a7be073d22a036e308d` |
-| Prédictions scellées | **42**, dont **41 jugées** (voir `scelles.tsv`) |
-| Critères | **186** annoncés · **178** confrontés · **121** tenus · **57** démentis |
-| Date de l'état | 2026-10-14T18:35Z |
+| Chaîne de hachage | **651 647** maillons |
+| Empreinte de tête | `ae06a0fb2f489ae9ba50c41eb98dda3596de958b365e4fc8798c1eacaa10f9a2` |
+| Prédictions scellées | **46**, dont **45 jugées** (voir `scelles.tsv`) |
+| Critères | **203** annoncés · **195** confrontés · **134** tenus · **61** démentis |
+| Date de l'état | 2026-10-14T22:20Z |
 
 ⚠️ **Deux colonnes de critères, et c'est voulu.** `criteres_annonces` compte tous
 les critères scellés ; `criteres_confrontes` ne compte que ceux qui ont reçu un
 verdict. Les 8 de différence appartiennent à une prédiction posée dont le calcul
-tourne encore. Avec un seul nombre, l'addition ne tombait pas juste : 121 + 57
-font 178, pas 186.
+tourne encore. Avec un seul nombre, l'addition ne tombait pas juste : 134 + 61
+font 195, pas 203.
 
 > 📏 *Un compteur qui ne dit pas ce qu'il compte flatte celui qui le publie.*
 
